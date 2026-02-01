@@ -1,4 +1,4 @@
-NAME = brain
+NAME = abstract
 
 RED = \033[0;31m
 GREEN = \033[0;32m
@@ -11,7 +11,7 @@ SRC_DIR = src/
 OBJ_DIR = obj/
 
 SRC =	$(addprefix $(SRC_DIR), main.cpp \
-								Animal.cpp \
+								AAnimal.cpp \
 								Cat.cpp \
 								Dog.cpp \
 								Brain.cpp)
