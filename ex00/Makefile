@@ -25,14 +25,14 @@ $(NAME): $(OBJS)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
 	@mkdir -p $(dir $@)
-	@printf "$(GREEN)[Compiling]$(NC) %s...$(NC)\n" "$(notdir $(<))"
+	@echo "$(GREEN)[Compiling]$(NC) $(notdir $(<))...$(NC)"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	@rm -rf $(OBJ_DIR)
 
 fclean: clean
-	@printf "$(RED)[Cleaning]$(NC)\n"
+	@echo "$(RED)[Cleaning]$(NC)"
 	@rm -f $(NAME)
 
 re: fclean all

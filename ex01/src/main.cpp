@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gyasuhir <gyasuhir@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gyasuhir <gyasuhir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/31 22:58:47 by gyasuhir          #+#    #+#             */
-/*   Updated: 2026/01/31 22:59:30 by gyasuhir         ###   ########.fr       */
+/*   Updated: 2026/02/01 10:32:17 by gyasuhir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,37 +79,37 @@ int main()
 	std::cout << std::endl;
 	{
 		std::cout << MAGENTA << ">> CATS" << RESET << std::endl;
-		std::cout << YELLOW << "* Creating cat Garfield with default ideas *" << RESET << std::endl;
-		Cat Garfield;
+		std::cout << YELLOW << "* Creating cat Crash with default ideas *" << RESET << std::endl;
+		Cat Crash;
 
-		Garfield.getBrain()->setIdea(0, "Eat lasagna");
-		Garfield.getBrain()->setIdea(1, "Ignore humans");
-		Garfield.getBrain()->setIdea(2, "Sleep");
-		std::cout << "Garfield's ideas:" << std::endl;
+		Crash.getBrain()->setIdea(0, "Eat lasagna");
+		Crash.getBrain()->setIdea(1, "Ignore humans");
+		Crash.getBrain()->setIdea(2, "Sleep");
+		std::cout << "Crash's ideas:" << std::endl;
 		for (int i = 0; i < 3; i++)
-			std::cout << "- Idea " << i << ": " << Garfield.getBrain()->getIdea(i) << std::endl;
+			std::cout << "- Idea " << i << ": " << Crash.getBrain()->getIdea(i) << std::endl;
 		std::cout << std::endl;
 
-		std::cout << YELLOW << "* Garfield was cloned into cat Nermal *" << RESET << std::endl;
-		Cat Nermal = Garfield;
-		std::cout << "Nermal's ideas after cloning:" << std::endl;
+		std::cout << YELLOW << "* Crash was cloned into cat Chloe *" << RESET << std::endl;
+		Cat Chloe = Crash;
+		std::cout << "Chloe's ideas after cloning:" << std::endl;
 		for (int i = 0; i < 3; i++)
-			std::cout << "- Idea " << i << ": " << Nermal.getBrain()->getIdea(i) << std::endl;
+			std::cout << "- Idea " << i << ": " << Chloe.getBrain()->getIdea(i) << std::endl;
 		std::cout << std::endl;
 
-		std::cout << YELLOW << "* Garfield changed his ideas *" << RESET << std::endl;
-		Garfield.getBrain()->setIdea(0, "Eat lasagna again");
-		Garfield.getBrain()->setIdea(1, "Ignore humans again");
-		Garfield.getBrain()->setIdea(2, "Sleep again");
-		std::cout << "Garfield's new ideas:" << std::endl;
+		std::cout << YELLOW << "* Crash changed his ideas *" << RESET << std::endl;
+		Crash.getBrain()->setIdea(0, "Eat brains");
+		Crash.getBrain()->setIdea(1, "Code python");
+		Crash.getBrain()->setIdea(2, "Play CS:GO");
+		std::cout << "Crash's new ideas:" << std::endl;
 		for (int i = 0; i < 3; i++)
-			std::cout << "- Idea " << i << ": " << Garfield.getBrain()->getIdea(i) << std::endl;
+			std::cout << "- Idea " << i << ": " << Crash.getBrain()->getIdea(i) << std::endl;
 		std::cout << std::endl;
 
-		std::cout << YELLOW << "* Nermal didn't change its ideas *" << RESET << std::endl;
-		std::cout << "Nermal's ideas:" << std::endl;
+		std::cout << YELLOW << "* Chloe didn't change its ideas *" << RESET << std::endl;
+		std::cout << "Chloe's ideas:" << std::endl;
 		for (int i = 0; i < 3; i++)
-			std::cout << "- Idea " << i << ": " << Nermal.getBrain()->getIdea(i) << std::endl;
+			std::cout << "- Idea " << i << ": " << Chloe.getBrain()->getIdea(i) << std::endl;
 		std::cout << std::endl;
 
 		std::cout << YELLOW << "* Cats walked away indifferently, of course *" << RESET << std::endl;
